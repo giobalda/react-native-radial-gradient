@@ -7,21 +7,15 @@ import android.graphics.Paint;
 import android.graphics.RadialGradient;
 import android.graphics.RectF;
 import android.graphics.Shader;
-import android.support.annotation.Nullable;
-import android.support.v4.graphics.ColorUtils;
 import android.util.AttributeSet;
 import android.view.View;
 
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.uimanager.PixelUtil;
 
-import java.text.DecimalFormat;
+import javax.annotation.Nullable;
 
-/**
- * Created by Surajit Sarkar on 22/12/17.
- * Company : Bitcanny Technologies Pvt. Ltd.
- * Email   : surajit@bitcanny.com
- */
+import androidx.core.graphics.ColorUtils;
 
 public class GradientView extends View {
 
@@ -70,10 +64,10 @@ public class GradientView extends View {
         if(centerX<0){
             centerX = width/2;
         }
-		if(centerY<0){
+        if(centerY<0){
             centerY = height/2;
         }
-		if(radius<= 0 ){
+        if(radius<= 0 ){
             radius = Math.min(width,height)/2;
         }
     }
